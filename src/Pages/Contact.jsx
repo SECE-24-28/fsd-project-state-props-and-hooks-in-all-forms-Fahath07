@@ -42,7 +42,7 @@ function Contact() {
             {sent ? (
               <div className="contact-sent">
                 <div style={{ fontSize: "2.5rem" }}>✅</div>
-                <h3>Message Sent!</h3>
+                <h3>Message Sent!!</h3>
                 <p>We'll get back to you within 24 hours.</p>
                 <button className="btn btn-primary" onClick={() => setSent(false)}>Send Another</button>
               </div>

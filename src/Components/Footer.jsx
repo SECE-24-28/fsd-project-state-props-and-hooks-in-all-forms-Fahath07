@@ -37,9 +37,9 @@ function Footer() {
 
         <div className="footer-col">
           <h4>Contact</h4>
-          <p>📍 Kochi, Kerala, India</p>
-          <p>📞 +91 98765 43210</p>
-          <p>✉️ hello@trailbliss.in</p>
+          <p>📍 Palani Road, Dharapuram,Tiruppur, Tamil Nadu 638657</p>
+          <p>📞 +91 6369386812</p>
+          <p>✉️ adventure@trailbliss.in</p>
         </div>
       </div>
 
