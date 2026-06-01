@@ -1,0 +1,53 @@
+.form-container { max-width: 780px; margin: 0 auto; }
+
+.form-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  background: var(--white);
+  padding: 6px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  width: fit-content;
+}
+.form-tab {
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all 0.18s ease;
+}
+.form-tab.active { background: var(--navy); color: var(--white); font-weight: 600; }
+.form-tab:hover:not(.active) { background: var(--off-white); color: var(--navy); }
+
+.form-card { padding: 40px; }
+.form-section-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 20px; }
+.form-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+
+.form-success-page {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #EEF2FF 0%, #FFF7ED 100%);
+}
+.form-success-card {
+  max-width: 440px;
+  width: 100%;
+  padding: 52px 40px;
+  text-align: center;
+}
+.success-icon { font-size: 3rem; margin-bottom: 16px; }
+.form-success-card h2 { font-size: 1.8rem; font-weight: 800; color: var(--navy); }
+.form-success-card p { color: var(--muted); margin: 12px 0 28px; line-height: 1.7; }
+
+@media (max-width: 600px) {
+  .form-grid-2 { grid-template-columns: 1fr; }
+  .form-card { padding: 24px 20px; }
+  .form-tabs { width: 100%; }
+  .form-tab { flex: 1; text-align: center; }
+}
