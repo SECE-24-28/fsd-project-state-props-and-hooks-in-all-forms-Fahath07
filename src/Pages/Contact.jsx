@@ -21,9 +21,9 @@ function Contact() {
             </p>
             <div className="contact-cards">
               {[
-                { icon: "📍", title: "Our Office", detail: "MG Road, Kochi, Kerala 682001" },
-                { icon: "📞", title: "Phone", detail: "+91 98765 43210" },
-                { icon: "✉️", title: "Email", detail: "hello@trailbliss.in" },
+                { icon: "📍", title: "Our Office", detail: "Palani Road, Dharapuram,Tiruppur, Tamil Nadu 638657" },
+                { icon: "📞", title: "Phone", detail: "+91 6369386812" },
+                { icon: "✉️", title: "Email", detail: "adventure@trailbliss.in" },
                 { icon: "🕐", title: "Working Hours", detail: "Mon–Sat, 9 AM – 7 PM" },
               ].map((c) => (
                 <div className="contact-info-card" key={c.title}>

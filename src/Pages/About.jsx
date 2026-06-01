@@ -10,10 +10,9 @@ const stats = [
 ];
 
 const team = [
-  { name: "Arjun Nair", role: "Founder & CEO", emoji: "👨‍💼" },
-  { name: "Priya Menon", role: "Head of Operations", emoji: "👩‍💼" },
-  { name: "Rahul Das", role: "Lead Travel Curator", emoji: "🧭" },
-  { name: "Sneha Pillai", role: "Customer Experience", emoji: "💁‍♀️" },
+  { name: "Fahath Al Salam ", role: "Founder & CEO", emoji: "👨‍💼" },
+  { name: "Eswara Kumar", role: "Lead Travel Curator", emoji: "🧭" },
+  { name: "Ahmed RIfaz", role: "Customer Experience", emoji: "💁‍♀️" },
 ];
 
 function About() {
@@ -32,7 +31,7 @@ function About() {
             <p className="section-label">Our Story</p>
             <h2 className="section-title">Born from a love of travel</h2>
             <p className="section-sub" style={{ maxWidth: "100%" }}>
-              TrailBliss was founded in 2019 by a group of passionate travellers who believed that
+              TrailBliss was founded in 2026 by a group of passionate travellers who believed that
               exploring India's incredible landscapes should be accessible, affordable, and stress-free.
             </p>
             <p style={{ marginTop: 16, color: "var(--muted)", lineHeight: 1.8 }}>
