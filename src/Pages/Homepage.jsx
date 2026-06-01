@@ -26,7 +26,7 @@ const testimonials = [
 ];
 
 function Stars({ count }) {
-  return <span className="stars">{"★".repeat(count)}</span>;
+  return <span className="stars">{"★".repeat(Math.round(count))}</span>;
 }
 
 function Homepage() {
