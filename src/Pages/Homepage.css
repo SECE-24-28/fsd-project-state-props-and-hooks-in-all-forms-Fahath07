@@ -31,7 +31,7 @@
   letter-spacing: 0.06em;
   margin-bottom: 24px;
 }
-.hero-title-img { max-width: 2920px; width: clamp(1220px, 84vw, 800px); height: 500px; margin: 0 0 0px; }
+.hero-title-img { max-width: 500px; width: clamp(240px, 48vw, 500px); height: auto; display: block; margin: 0 0 20px; }
 .hero-desc { font-size: 1.1rem; max-width: 520px; color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 32px; }
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
 .hero-stats { display: flex; gap: 40px; flex-wrap: wrap; }
