@@ -79,6 +79,14 @@
   transition: 0.2s;
 }
 
+.user-greeting {
+  font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+  font-weight: 600;
+  color: var(--navy);
+  padding: clamp(6px, 0.6vw, 10px) clamp(10px, 1vw, 16px);
+  white-space: nowrap;
+}
+
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
   .navbar-inner { padding: 12px 20px; }

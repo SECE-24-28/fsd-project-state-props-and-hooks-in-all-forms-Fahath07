@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import heroTitle from "../Assets/Images/herotitle.png";
 import munnar from "../Assets/Images/munnar.jpg";
@@ -27,6 +28,52 @@ const testimonials = [
 
 function Stars({ count }) {
   return <span className="stars">{"★".repeat(Math.round(count))}</span>;
+}
+
+// small newsletter sub-component — keeps the main component clean
+function NewsletterBar() {
+  const [email, setEmail]     = useState("");
+  const [done, setDone]       = useState(false);
+  const [error, setError]     = useState("");
+
+  function handleSub(e) {
+    e.preventDefault();
+    if (!email.trim() || !/\S+@\S+\.\S+/.test(email)) {
+      setError("Enter a valid email");
+      return;
+    }
+    setDone(true);
+    setError("");
+  }
+
+  if (done) {
+    return (
+      <div className="newsletter-bar">
+        <p>🎉 Thanks for subscribing! Watch your inbox for deals.</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="newsletter-bar">
+      <div className="newsletter-copy">
+        <strong>Get exclusive travel deals</strong>
+        <span>Subscribe and be the first to know about seasonal packages.</span>
+      </div>
+      <form className="newsletter-form" onSubmit={handleSub} noValidate>
+        <input
+          type="email"
+          className="form-control"
+          placeholder="your@email.com"
+          value={email}
+          onChange={(e) => { setEmail(e.target.value); setError(""); }}
+          style={{ maxWidth: 260 }}
+        />
+        <button type="submit" className="btn btn-gold">Subscribe</button>
+      </form>
+      {error && <span className="error-msg">{error}</span>}
+    </div>
+  );
 }
 
 function Homepage() {
@@ -144,6 +191,13 @@ function Homepage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Newsletter */}
+      <section className="section-sm">
+        <div className="container">
+          <NewsletterBar />
         </div>
       </section>
 

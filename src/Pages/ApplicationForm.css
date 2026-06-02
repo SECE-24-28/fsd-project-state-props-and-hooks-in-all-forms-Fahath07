@@ -51,3 +51,6 @@
   .form-tabs { width: 100%; }
   .form-tab { flex: 1; text-align: center; }
 }
+
+.form-control.input-error { border-color: #EF4444; }
+.error-msg { color: #EF4444; font-size: 0.78rem; margin-top: 4px; display: block; }

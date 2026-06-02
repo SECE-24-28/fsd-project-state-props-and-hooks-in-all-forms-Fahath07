@@ -63,3 +63,60 @@
   .auth-card { padding: 32px 24px; }
   .form-row-2 { grid-template-columns: 1fr; }
 }
+
+.form-control.input-error { 
+  border-color: #EF4444; 
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.error-msg { 
+  color: #EF4444; 
+  font-size: 0.78rem; 
+  margin-top: 4px; 
+  display: block;
+  font-weight: 500;
+}
+
+.checkbox-label.input-error {
+  color: #EF4444;
+}
+
+.success-msg {
+  color: #10B981;
+  font-size: 0.78rem;
+  margin-top: 4px;
+  display: block;
+  font-weight: 500;
+}
+
+.input-with-icon { position: relative; }
+.toggle-pass {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+.toggle-pass:hover { opacity: 1; }
+
+.strength-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.strength-fill {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: #E5E7EB;
+  transition: width 0.3s, background 0.3s;
+}

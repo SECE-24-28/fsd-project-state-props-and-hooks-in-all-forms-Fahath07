@@ -144,3 +144,29 @@
   .hero-stats { gap: 24px; }
   .cta-box { padding: 36px 24px; }
 }
+
+/* Newsletter bar */
+.newsletter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: linear-gradient(135deg, var(--navy), #1E3A5F);
+  border-radius: var(--radius);
+  padding: 28px 36px;
+  color: var(--white);
+}
+.newsletter-copy { display: flex; flex-direction: column; gap: 4px; }
+.newsletter-copy strong { font-size: 1.05rem; }
+.newsletter-copy span { font-size: 0.88rem; color: rgba(255,255,255,0.7); }
+.newsletter-form { display: flex; gap: 10px; flex-wrap: wrap; }
+.newsletter-bar .error-msg { color: #FCA5A5; font-size: 0.78rem; width: 100%; }
+.error-msg { color: #EF4444; font-size: 0.78rem; margin-top: 4px; display: block; }
+
+@media (max-width: 600px) {
+  .newsletter-bar { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
+  .newsletter-form { width: 100%; }
+  .newsletter-form input { flex: 1; max-width: 100% !important; }
+  .newsletter-form .btn { width: 100%; }
+}
