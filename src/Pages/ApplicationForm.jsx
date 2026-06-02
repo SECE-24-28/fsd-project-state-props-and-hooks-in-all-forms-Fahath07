@@ -74,12 +74,46 @@ function ApplicationForm() {
                     <label>Preferred Package *</label>
                     <select className="form-control" required>
                       <option value="">Select a package</option>
-                      <option>Tea Hill Retreat – Munnar</option>
-                      <option>Backwater Houseboat – Alleppey</option>
-                      <option>Hill Station Getaway – Kodaikanal</option>
-                      <option>Adventure Trek – Western Ghats</option>
-                      <option>Nilgiri Explorer – Ooty</option>
-                      <option>Cliff Beach Escape – Varkala</option>
+                      <optgroup label="🌿 Nature">
+                        <option>Tea Hill Retreat – Munnar</option>
+                        <option>Hill Station Getaway – Kodaikanal</option>
+                        <option>Nilgiri Explorer – Ooty</option>
+                        <option>Coffee Plantation Tour – Coorg</option>
+                        <option>Wayanad Wilderness – Wayanad</option>
+                        <option>Spiti Valley Expedition – Spiti</option>
+                        <option>Shimla Snow Escape – Shimla</option>
+                        <option>Goa Sunset Beach – Goa</option>
+                      </optgroup>
+                      <optgroup label="🛶 Leisure">
+                        <option>Backwater Houseboat – Alleppey</option>
+                        <option>Cliff Beach Escape – Varkala</option>
+                        <option>Taj Mahal Heritage Tour – Agra</option>
+                        <option>Pink City Royal Tour – Jaipur</option>
+                        <option>Lake City Luxury – Udaipur</option>
+                        <option>Andaman Island Bliss – Andaman</option>
+                        <option>French Quarter Retreat – Pondicherry</option>
+                        <option>Old Delhi Heritage Walk – Delhi</option>
+                      </optgroup>
+                      <optgroup label="🧗 Adventure">
+                        <option>Western Ghats Trek</option>
+                        <option>Manali Mountain Rush – Manali</option>
+                        <option>Rishikesh River Rush – Rishikesh</option>
+                        <option>Ladakh Bike Expedition – Ladakh</option>
+                        <option>Auli Skiing Adventure – Auli</option>
+                        <option>Corbett Safari – Jim Corbett</option>
+                        <option>Paramotoring Experience – Coimbatore</option>
+                        <option>Rann of Kutch Camp – Gujarat</option>
+                      </optgroup>
+                      <optgroup label="🏛️ Cultural">
+                        <option>Varanasi Spiritual Journey – Varanasi</option>
+                        <option>Hampi Ruins Explorer – Hampi</option>
+                        <option>Mysore Palace & Culture – Mysore</option>
+                        <option>Golden Temple Pilgrimage – Amritsar</option>
+                      </optgroup>
+                      <optgroup label="🧘 Wellness">
+                        <option>Kerala Ayurveda Retreat – Thrissur</option>
+                        <option>Yoga & Meditation Retreat – Rishikesh</option>
+                      </optgroup>
                     </select>
                   </div>
                   <div className="form-group">
